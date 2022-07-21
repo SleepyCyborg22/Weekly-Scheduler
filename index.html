@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta value="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Scheduler</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -39,7 +39,31 @@
         </div>
     </nav>
 
-    
+    <div class="container">
+            <input type="radio" id="monday" value="monday" name="weekday">
+            <label for="monday">Monday</label>
+            <input type="radio" id="tuesday" value="tuesday" name="weekday">
+            <label for="tuesday">Tuesday</label>
+            <input type="radio" id="wednsday" value="wednsday" name="weekday">
+            <label for="wednsday">Wednsday</label>
+            <input type="radio" id="thursday" value="thursday" name="weekday">
+            <label for="thursday">Thursday</label>
+            <input type="radio" id="friday" value="friday" name="weekday">
+            <label for="friday">Friday</label>
+            <input type="radio" id="saturday" value="saturday" name="weekday">
+            <label for="saturday">Saturday</label>
+            <input type="radio" id="sunday" value="sunday" name="weekday">
+            <label for="sunday">Sunday</label>
+            <button id="weeksub" onclick="getweekday()">Get Day Data</button>  
+    </div>
+    <div class="container" id="schedule">
+        <div class="row">
+            <div class="col-3">Time</div>
+            <div class="col-4">Activity</div>
+            <div class="col-5">Agenda</div>
+        </div>
+        
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
